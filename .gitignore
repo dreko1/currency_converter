@@ -2,6 +2,7 @@
 # Reference: https://intellij-support.jetbrains.com/hc/en-us/articles/206544839
 
 untitled104.iml
+src/currency/main/APIKey.java
 
 # User-specific stuff
 .idea/**/workspace.xml
