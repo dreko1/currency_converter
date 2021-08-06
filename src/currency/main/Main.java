@@ -1,6 +1,9 @@
 package currency.main;
 
 import com.google.gson.Gson;
+
+import javax.swing.*;
+import java.awt.*;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
@@ -27,5 +30,18 @@ public class Main {
         for (String key : map.keySet()) {
             System.out.println(key + " " + map.get(key));
         }
+
+        GUI gui = new GUI(map);
+
+        while (true) {
+            System.out.println(gui.getInput());
+            System.out.println(gui.getOutput());
+            try {
+                Thread.sleep(1000);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+        }
+
     }
 }
